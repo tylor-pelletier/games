@@ -1,0 +1,35 @@
+body {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.square {
+    height: 140px;
+    width: 150px;
+    opacity: 0.5;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#entire-box {
+    border: 5px solid grey;
+}
