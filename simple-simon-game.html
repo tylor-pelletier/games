@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple Simon Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="simple-simon.css">
     <link href="https://fonts.googleapis.com/css?family=Exo:800" rel="stylesheet">
 </head>
 <body>
 
-<h1>Simple Simon</h1>
+<div id="top-box"></div>
+
+<div id="entire-box" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-6 pt-5 center-square">
+            <div id="1" class="square red"></div>
+        </div>
+        <div class="col-6 pt-5 center-square">
+            <div id="2" class="square blue"></div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <h1 class="col-12 pt-1">Simple Simon</h1>
+    </div>
+    <div class="row">
+        <div class="col-6 pb-5 center-square">
+            <div id="3" class="square green"></div>
+        </div>
+        <div class="col-6 pb-5 center-square">
+            <div id="4" class="square yellow"></div>
+        </div>
+    </div>
+</div>
+
+<br>
 
 <button id="start">Start</button>
 
 <br><br>
-
-<div id="entire-box">
-    <div>
-        <div id="1" class="square red"></div>
-    </div>
-    <div>
-        <div id="2" class="square blue"></div>
-    </div>
-    <div>
-        <div id="3" class="square green"></div>
-    </div>
-    <div>
-        <div id="4" class="square yellow"></div>
-    </div>
-</div>
 
 <h3>Watch the sequence.</h3>
 
@@ -36,6 +46,8 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="simple-simon.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

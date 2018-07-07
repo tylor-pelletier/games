@@ -12,6 +12,7 @@ h1 {
     height: 140px;
     width: 150px;
     opacity: 0.5;
+    display: inline-block;
 }
 
 .red {
@@ -30,6 +31,15 @@ h1 {
     background-color: yellow;
 }
 
+.center-square {
+    display: inline-block;
+}
+
+#top-box {
+    height: 100px;
+}
+
 #entire-box {
     border: 5px solid grey;
+    width: 40%;
 }
