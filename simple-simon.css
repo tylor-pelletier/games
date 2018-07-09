@@ -2,6 +2,8 @@ body {
     font-family: 'Exo', sans-serif;
     font-weight: bold;
     text-align: center;
+    background-image: url(wood-leaves.jpeg);
+    background-size: cover;
 }
 
 h1 {
@@ -42,4 +44,6 @@ h1 {
 #entire-box {
     border: 5px solid grey;
     width: 40%;
+    background-color: black;
+    color: white;
 }
