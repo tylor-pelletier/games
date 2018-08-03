@@ -17,6 +17,7 @@ var simonInput = [],
 $(document).ready(function() {
     // Add click functionality to start the game
     $("#start").click(function() {
+        $("#start").hide();
         // Increase the level after every successful entry
         level += 1;
         // Call the start game function
@@ -25,6 +26,8 @@ $(document).ready(function() {
 
     // Add player functionality with clicks
     $(".square").click(function() {
+        // Clear the wrong answer alert
+        $("#top-box").text("");
         // Grab the id number from the square clicked by the player
         id = $(this).attr("id");
         // Push the number to the playerInput array
@@ -38,11 +41,14 @@ $(document).ready(function() {
         // If the player was incorrect:
         if (!isPlayerCorrect()) {
             // Alert them that they were wrong
-            alert("Wrong input, you made it to level: " + level + "\nBetter luck next time!");
+            $("#top-box").append("<h1 id='end-game'>Wrong input<br>You made it to level: " + level + "<br>Better luck next time!</h1>");
+            // alert("Wrong input, you made it to level: " + level + "\nBetter luck next time!");
             // Reset game
             playerInput = [];
             simonInput = [];
             level = 0;
+            // Show the start button
+            $("#start").show();
         }
 
         // If the player was correct:
@@ -70,6 +76,8 @@ function isPlayerCorrect() {
 
 // Simon's input
 function startGame() {
+    // Clear the wrong answer alert
+    $("#top-box").text("");
     // Add the level to the display
     $(".level").text(level);
     // Get the random color number
@@ -126,4 +134,3 @@ function playSound(id) {
     // Plays the sound
     sound.play()
 }
-

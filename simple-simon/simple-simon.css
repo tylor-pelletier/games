@@ -1,49 +1,108 @@
-body {
-    font-family: 'Exo', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-image: url(wood-leaves.jpeg);
-    background-size: cover;
+@media screen and (max-width: 1500px) {
+
+    body {
+        font-family: 'Exo', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        background-image: url(wood-leaves.jpeg);
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .square {
+        height: 140px;
+        width: 150px;
+        opacity: 0.5;
+        display: inline-block;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
+
+    .center-square {
+        display: inline-block;
+    }
+
+    #top-box {
+        height: 100px;
+    }
+
+    #entire-box {
+        border: 5px solid grey;
+        width: 40%;
+        background-color: #111723;
+        color: white;
+    }
+
+    #end-game {
+        color: #111723;
+        font-size: 30px;
+    }
+
+    #title-two {
+        display: none;
+    }
+
 }
 
-h1 {
-    font-size: 40px;
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size: contain;
+    }
+
+    #entire-box {
+         border: 5px solid grey;
+         width: 70%;
+         background-color: #111723;
+         color: white;
+     }
+
 }
 
-.square {
-    height: 140px;
-    width: 150px;
-    opacity: 0.5;
-    display: inline-block;
-}
+@media screen and (max-width: 425px) {
 
-.red {
-    background-color: red;
-}
+    #title-one {
+        display: none;
+    }
 
-.blue {
-    background-color: blue;
-}
+    #title-two {
+        display: inline;
+    }
 
-.green {
-    background-color: green;
-}
+    #entire-box {
+        border: 5px solid grey;
+        width: 100%;
+        background-color: #111723;
+        color: white;
+    }
 
-.yellow {
-    background-color: yellow;
-}
+    #end-game {
+        font-size: 25px;
+    }
 
-.center-square {
-    display: inline-block;
-}
+    #green {
+        margin-top: 30px;
+    }
 
-#top-box {
-    height: 100px;
-}
+    #yellow {
+        margin-top: 30px;
+    }
 
-#entire-box {
-    border: 5px solid grey;
-    width: 40%;
-    background-color: black;
-    color: white;
 }
